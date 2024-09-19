@@ -1,4 +1,4 @@
-/*#include <stdio.h>
+#include <stdio.h>
 
 int ex_1(char str1[], char str2[] ) {
     printf("!!! %s , %s !!!\n", str1, str2);
@@ -21,4 +21,4 @@ int main() {
     scanf("%lf %lf", &m, &v);
     Ek = ex_2(m, v);
     printf("Ek = %.2lf\n", Ek);
-}*/
+}
