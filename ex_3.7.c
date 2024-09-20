@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <math.h>
+#define EPS 0.000001
 
 int main() {
     float a, b, c;
@@ -9,17 +10,17 @@ int main() {
     scanf("%f", &b);
     printf("c = \n");
     scanf("%f", &c);
-    if (a == 0) {
+    if (fabs(a) < EPS) {
         float x = (-1*c)/b;
         printf("x = %.0f\n", x);
         return 0;
     }
-
+ 
     float dis = (b * b) - (4 * a * c);
     if (dis < 0) {
         return 0;
     }
-    if (dis == 0) {
+    if (fabs(dis) < EPS) {
         float x = (-1 * b) / (2 * a);
         printf("x = %.0f", x);
     }
