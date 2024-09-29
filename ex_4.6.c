@@ -9,12 +9,9 @@ double task_a(unsigned int n) {
 }
 
 double task_b(unsigned int n) {
-    unsigned int p;
     double res = 0;
-    p = n;
-    for (int i = 1; i < n; i++) {
-        res += sqrt(3 * p);
-        p -= 1;
+    for (int i = 0; i < n; i++) {
+        res += sqrt(3 * (n - i));
     }
     return res;
 }
