@@ -1,4 +1,4 @@
-/*#include <stdio.h>
+#include <stdio.h>
 #include <math.h>
 int max_ones_count(unsigned long long n) {
     int max_cnt = 0;
@@ -20,4 +20,4 @@ int main() {
     unsigned long long n;
     scanf("%llu", &n);
     printf("%d", max_ones_count(n));
-}*/
+}
