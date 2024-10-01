@@ -1,4 +1,4 @@
-/*#include <stdio.h>
+#include <stdio.h>
 #include <math.h>
 int main() {
     unsigned char n;
@@ -7,4 +7,4 @@ int main() {
     unsigned long long m;
     scanf("%llu",&m);
     printf("%llu", m &~(1 << n));
-}*/
+}
