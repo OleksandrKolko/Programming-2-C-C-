@@ -1,4 +1,4 @@
-/*#include <stdio.h>
+#include <stdio.h>
 #include <math.h>
 int divisor2(unsigned n) {
     int k = 1;
@@ -23,4 +23,4 @@ int main() {
             printf("%u not work", i);
         }
     }
-}*/
+}
