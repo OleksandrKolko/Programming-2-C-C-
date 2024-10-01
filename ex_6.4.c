@@ -1,4 +1,4 @@
-/*#include <stdio.h>
+#include <stdio.h>
 #include <math.h>
 
 int main() {
@@ -10,4 +10,4 @@ int main() {
     b4 = n>>24;
     m = (b1 << 24) | (b3 << 16) | (b2 << 8) | b4;
     printf("%u", m);
-}*/
+}
