@@ -13,7 +13,7 @@ void delete_matr(double **matr, int n) {
 double** input_matrix(int n, int m) {
     double** matr = (double**) calloc(n, sizeof(double*));
     for (int i = 0; i < n; i++) {
-        matr[i] = (double*) calloc(m, sizeof(double)); // Змінено n на m
+        matr[i] = (double*) calloc(m, sizeof(double)); 
         for (int j = 0; j < m; j++) {
             printf("a[%d, %d] = ", i, j);
             scanf("%lf", &matr[i][j]);
@@ -25,12 +25,12 @@ double** input_matrix(int n, int m) {
 double** mult_matr(const double **matr1, const double **matr2, int n, int m) {
     double** matr3 = (double**) calloc(n, sizeof(double*));
     for (int i = 0; i < n; i++) {
-        matr3[i] = (double*) calloc(m, sizeof(double)); // Змінено n на m
+        matr3[i] = (double*) calloc(m, sizeof(double));
     }
     for (int i = 0; i < n; ++i) {
         for (int j = 0; j < m; ++j) {
             matr3[i][j] = 0;
-            for (int k = 0; k < m; ++k) { // Правильно використовуємо m
+            for (int k = 0; k < m; ++k) { 
                 matr3[i][j] += matr1[i][k] * matr2[k][j];
             }
         }
